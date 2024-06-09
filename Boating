@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int bw,a,c;
+    int aw=75,cw=30;
+    scanf("%d%d%d",&bw,&a,&c);
+    int bal=(a*aw)+(c*cw);
+    if(bal<=bw){
+        printf("Boat is stable");
+     }
+    else{
+        printf("Boat will drown");
+        }
+    return 0;
+}
