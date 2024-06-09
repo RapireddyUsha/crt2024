@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+char ch;
+    scanf("%c",&ch);
+    if(ch>=65&&ch<96){
+        printf("Upper");
+        }
+    else if(ch>=96&&ch<=112){
+        printf("Lower");
+        }
+    else if(ch>='0'&&ch<='9'){
+        printf("Number");
+        }
+    else{
+        printf("Symbol");
+    }   
+    return 0;
+}
