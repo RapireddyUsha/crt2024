@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+float amount,rofi,years;
+    scanf("%f%f%f",&amount,&rofi,&years);
+    float interest=(amount*rofi*years)/100;
+    float famt=amount+interest;
+    float dis=interest*(0.02);
+    float setamt=famt-dis;
+    printf("%.2f\n%.2f\n%.2f\n%.2f",interest,famt,dis,setamt);    
+    return 0;
+}
