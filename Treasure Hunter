@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int t,l,b;
+    scanf("%d%d%d",&t,&l,&b);
+    int ls=(t*l)/100;
+    int r=t-ls;
+    int bs=(r*b)/100;
+    int o=(r-bs)/3;
+    printf("%d\n%d\n%d",ls,bs,o);  
+    return 0;
+}
