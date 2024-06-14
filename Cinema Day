@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int d,m,y,stud,sum;
+    scanf("%d\n%d\n%d\n%d",&d,&m,&y,&stud);
+    if((50<stud)&&(stud<100)){
+        sum=d+m+y;
+        if(sum%(3*4)==0){
+           printf("Cinema Day");
+        }
+        else{
+           printf("Not a Cinema Day");
+        }
+    }
+    else{
+        printf("Not a Cinema Day");
+    }  
+    return 0;
+}
