@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int units;
+    float bill;
+    scanf("%d",&units);
+    if(units<=200){
+        bill=0.5*units;
+        printf("Rs.%d",(int)bill);
+    }
+    else if(units<=400){
+        bill=0.65*units;
+        printf("Rs.%d",(int)bill);
+    }
+    else if(units<=600){
+        bill=0.80*units+200;
+        printf("Rs.%d",(int)bill);
+    }
+    else if(units>600){
+        bill=1.25*units+425;
+        printf("Rs.%d",(int)bill);
+    }  
+    return 0;
+}
