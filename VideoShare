@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int rating;
+    scanf("%d",&rating);
+    if((rating>=30)&&(rating<=100)){
+        if((rating>=30)&&(rating<=50)){
+            printf("Average");
+        }
+        else if((rating>=51)&&(rating<=60)){
+            printf("Good");
+        }
+        else if((rating>=61)&&(rating<=80)){
+            printf("Excellent");
+        }
+        else{
+            printf("Outstanding");
+        }
+    }
+    else{
+        printf("Invalid Input");
+    }  
+    return 0;
+}
